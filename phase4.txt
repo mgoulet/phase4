@@ -1,0 +1,22 @@
+phase4
+Martin Goulet
+December 2005
+
+controls:
+arrows: movement
+rshift/rctrl: 		normalvec movement
+insert/delete: 		target entity cycle
+pageup/pagedown: 	camera source cycle
+home/end: 		hyperbelt throttle
+kp_ins: 		rocket launch
+
+console commands:
+quit/exit		...
+clear			clear console
+math3d			toggle vector info (useful to see collision detection)
+models3d		toggle models
+thegoggles		does nothing
+
+Warning: firing too maky rockets wil lslow down the system due to
+the O(n^2) collision detection algorithm, and the bug regarding the
+timescale in particle dynamics...

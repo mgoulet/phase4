@@ -1,0 +1,11 @@
+////////////////////////////////////////////////
+//	Martin Goulet
+//	Project: Phase3
+//	VolumeManipulations.cpp
+////////////////////////////////////////////////
+
+#include "VolumeManipulations.h"
+
+using namespace VolumeManipulations;
+
+//	Still Empty...

@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="phase4"
+	ProjectGUID="{04027C21-A3AB-4556-872B-0042845D56A6}"
+	Keyword="Win32Proj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="Debug"
+			IntermediateDirectory="Debug"
+			ConfigurationType="1"
+			UseOfATL="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2"
+			ManagedExtensions="FALSE">
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="0"
+				ImproveFloatingPointConsistency="FALSE"
+				FavorSizeOrSpeed="1"
+				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS"
+				MinimalRebuild="FALSE"
+				BasicRuntimeChecks="0"
+				RuntimeLibrary="2"
+				UsePrecompiledHeader="0"
+				WarningLevel="4"
+				Detect64BitPortabilityProblems="TRUE"
+				DebugInformationFormat="3"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="opengl32.lib glu32.lib glut32.lib gdi32.lib winmm.lib dxguid.lib dinput8.lib comctl32.lib"
+				OutputFile="$(OutDir)/phase4.exe"
+				LinkIncremental="2"
+				GenerateDebugInformation="TRUE"
+				ProgramDatabaseFile="$(OutDir)/phase4.pdb"
+				SubSystem="2"
+				TargetMachine="1"/>
+			<Tool
+				Name="VCMIDLTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="Release"
+			IntermediateDirectory="Release"
+			ConfigurationType="1"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS"
+				RuntimeLibrary="4"
+				UsePrecompiledHeader="0"
+				WarningLevel="3"
+				Detect64BitPortabilityProblems="TRUE"
+				DebugInformationFormat="3"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				OutputFile="$(OutDir)/phase4.exe"
+				LinkIncremental="1"
+				GenerateDebugInformation="TRUE"
+				SubSystem="2"
+				OptimizeReferences="2"
+				EnableCOMDATFolding="2"
+				TargetMachine="1"/>
+			<Tool
+				Name="VCMIDLTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="log &amp; driver"
+			Filter="">
+			<File
+				RelativePath=".\Engine Files\dot_plan.txt">
+			</File>
+			<File
+				RelativePath=".\Engine Files\win.cpp">
+			</File>
+		</Filter>
+		<Filter
+			Name="Engine Phase 4"
+			Filter="">
+			<File
+				RelativePath=".\Engine Files\EnginePhase4.cpp">
+			</File>
+			<File
+				RelativePath=".\Engine Files\EnginePhase4.h">
+			</File>
+			<Filter
+				Name="State Machines"
+				Filter="">
+				<Filter
+					Name="KernelStateMachine"
+					Filter="">
+					<File
+						RelativePath=".\Engine Files\KernelStateMachine.cpp">
+					</File>
+					<File
+						RelativePath=".\Engine Files\KernelStateMachine.h">
+					</File>
+					<File
+						RelativePath=".\Engine Files\KernelStates.h">
+					</File>
+				</Filter>
+				<Filter
+					Name="GameStateMachine"
+					Filter="">
+					<File
+						RelativePath=".\Engine Files\GameStateMachine.cpp">
+					</File>
+					<File
+						RelativePath=".\Engine Files\GameStateMachine.h">
+					</File>
+					<File
+						RelativePath=".\Engine Files\GameStates.h">
+					</File>
+				</Filter>
+			</Filter>
+			<Filter
+				Name="Sub Sets"
+				Filter="">
+				<Filter
+					Name="Engine SubSet"
+					Filter="">
+					<File
+						RelativePath=".\Engine Files\EngineSubSet.cpp">
+					</File>
+					<File
+						RelativePath=".\Engine Files\EngineSubSet.h">
+					</File>
+					<File
+						RelativePath=".\Engine Files\SubSetDeclarations.h">
+					</File>
+					<File
+						RelativePath=".\Engine Files\SubSetDefinitions.h">
+					</File>
+					<Filter
+						Name="Engine SubComponents"
+						Filter="">
+						<File
+							RelativePath=".\Engine Files\SubComponent.h">
+						</File>
+						<Filter
+							Name="Asset Sets"
+							Filter="">
+							<File
+								RelativePath=".\Engine Files\AssetSet.h">
+							</File>
+							<Filter
+								Name="ModelSet"
+								Filter="">
+								<File
+									RelativePath=".\Engine Files\ModelSet.cpp">
+								</File>
+								<File
+									RelativePath=".\Engine Files\ModelSet.h">
+								</File>
+								<Filter
+									Name="MODEL (md2)"
+									Filter="">
+									<File
+										RelativePath=".\Engine Files\md2.cpp">
+									</File>
+									<File
+										RelativePath=".\Engine Files\MD2.h">
+									</File>
+								</Filter>
+							</Filter>
+							<Filter
+								Name="TextureSet"
+								Filter="">
+								<File
+									RelativePath=".\Engine Files\TextureSet.cpp">
+								</File>
+								<File
+									RelativePath=".\Engine Files\TextureSet.h">
+								</File>
+								<Filter
+									Name="CTargaImage"
+									Filter="">
+									<File
+										RelativePath=".\Engine Files\CTargaImage.cpp">
+									</File>
+									<File
+										RelativePath=".\Engine Files\CTargaImage.h">
+									</File>
+								</Filter>
+							</Filter>
+						</Filter>
+						<Filter
+							Name="EntitySet"
+							Filter="">
+							<File
+								RelativePath=".\Engine Files\EntitySet.cpp">
+							</File>
+							<File
+								RelativePath=".\Engine Files\EntitySet.h">
+							</File>
+						</Filter>
+						<Filter
+							Name="Timer"
+							Filter="">
+							<File
+								RelativePath=".\Engine Files\Timer.cpp">
+							</File>
+							<File
+								RelativePath=".\Engine Files\Timer.h">
+							</File>
+						</Filter>
+						<Filter
+							Name="Console"
+							Filter="">
+							<File
+								RelativePath=".\Engine Files\Console.cpp">
+							</File>
+							<File
+								RelativePath=".\Engine Files\Console.h">
+							</File>
+						</Filter>
+						<Filter
+							Name="FontManager"
+							Filter="">
+							<File
+								RelativePath=".\Engine Files\FontManager.cpp">
+							</File>
+							<File
+								RelativePath=".\Engine Files\FontManager.h">
+							</File>
+						</Filter>
+						<Filter
+							Name="FPSCounter"
+							Filter="">
+							<File
+								RelativePath=".\Engine Files\FPSCounter.cpp">
+							</File>
+							<File
+								RelativePath=".\Engine Files\FPSCounter.h">
+							</File>
+						</Filter>
+						<Filter
+							Name="Menu"
+							Filter="">
+							<File
+								RelativePath=".\Engine Files\Menu.cpp">
+							</File>
+							<File
+								RelativePath=".\Engine Files\Menu.h">
+							</File>
+						</Filter>
+						<Filter
+							Name="SkySphere"
+							Filter="">
+							<File
+								RelativePath=".\Engine Files\SkySphere.cpp">
+							</File>
+							<File
+								RelativePath=".\Engine Files\SkySphere.h">
+							</File>
+						</Filter>
+						<Filter
+							Name="EntityManager"
+							Filter="">
+							<File
+								RelativePath=".\Engine Files\EntityManager.cpp">
+							</File>
+							<File
+								RelativePath=".\Engine Files\EntityManager.h">
+							</File>
+						</Filter>
+						<Filter
+							Name="HeadsUpDisplay"
+							Filter="">
+							<File
+								RelativePath=".\Engine Files\HeadsUpDisplay.cpp">
+							</File>
+							<File
+								RelativePath=".\Engine Files\HeadsUpDisplay.h">
+							</File>
+						</Filter>
+						<Filter
+							Name="Input Sybsystem"
+							Filter="">
+							<File
+								RelativePath=".\Engine Files\InputManager.cpp">
+							</File>
+							<File
+								RelativePath=".\Engine Files\InputManager.h">
+							</File>
+							<Filter
+								Name="RawInput"
+								Filter="">
+								<File
+									RelativePath=".\Engine Files\RawInput.cpp">
+								</File>
+								<File
+									RelativePath=".\Engine Files\RawInput.h">
+								</File>
+							</Filter>
+							<Filter
+								Name="NetInput"
+								Filter="">
+								<File
+									RelativePath=".\Engine Files\NetInput.cpp">
+								</File>
+								<File
+									RelativePath=".\Engine Files\NetInput.h">
+								</File>
+							</Filter>
+						</Filter>
+						<Filter
+							Name="HeightMap"
+							Filter="">
+							<File
+								RelativePath=".\Engine Files\HeightMap.cpp">
+							</File>
+							<File
+								RelativePath=".\Engine Files\HeightMap.h">
+							</File>
+						</Filter>
+						<Filter
+							Name="ComplexMap"
+							Filter="">
+							<File
+								RelativePath=".\Engine Files\ComplexMap.cpp">
+							</File>
+							<File
+								RelativePath=".\Engine Files\ComplexMap.h">
+							</File>
+						</Filter>
+						<Filter
+							Name="SceneManager"
+							Filter="">
+							<File
+								RelativePath=".\Engine Files\SceneManager.cpp">
+							</File>
+							<File
+								RelativePath=".\Engine Files\SceneManager.h">
+							</File>
+						</Filter>
+					</Filter>
+				</Filter>
+				<Filter
+					Name="Settings SubSet"
+					Filter="">
+					<File
+						RelativePath=".\Engine Files\SettingsSubSet.cpp">
+					</File>
+					<File
+						RelativePath=".\Engine Files\SettingsSubSet.h">
+					</File>
+					<Filter
+						Name="Settings SubComponents"
+						Filter="">
+						<Filter
+							Name="KernelSettings"
+							Filter="">
+							<File
+								RelativePath=".\Engine Files\KernelSettings.cpp">
+							</File>
+							<File
+								RelativePath=".\Engine Files\KernelSettings.h">
+							</File>
+						</Filter>
+						<Filter
+							Name="GameSettings"
+							Filter="">
+							<File
+								RelativePath=".\Engine Files\GameSettings.cpp">
+							</File>
+							<File
+								RelativePath=".\Engine Files\GameSettings.h">
+							</File>
+						</Filter>
+					</Filter>
+				</Filter>
+			</Filter>
+		</Filter>
+		<Filter
+			Name="GL Wrapper Libraries"
+			Filter="">
+			<File
+				RelativePath=".\Engine Files\GLCustomLib.cpp">
+			</File>
+			<File
+				RelativePath=".\Engine Files\GLCustomLib.h">
+			</File>
+			<File
+				RelativePath=".\Engine Files\GLee.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Engine Resources"
+			Filter="">
+			<Filter
+				Name="Engine Mechanics"
+				Filter="">
+				<File
+					RelativePath=".\Engine Files\EngineMechanics.h">
+				</File>
+				<File
+					RelativePath=".\Engine Files\EngineMechanics.lib">
+				</File>
+				<File
+					RelativePath=".\Engine Files\MathEntities.h">
+				</File>
+				<File
+					RelativePath=".\Engine Files\MathManipulations.h">
+				</File>
+			</Filter>
+			<Filter
+				Name="Engine Entities"
+				Filter="">
+				<File
+					RelativePath=".\Engine Files\EngineEntities.h">
+				</File>
+				<File
+					RelativePath=".\Engine Files\GeneralDynamicsData.h">
+				</File>
+				<Filter
+					Name="Leaf Classes"
+					Filter="">
+					<Filter
+						Name="CAM"
+						Filter="">
+						<File
+							RelativePath=".\Engine Files\CAM.cpp">
+						</File>
+						<File
+							RelativePath=".\Engine Files\CAM.h">
+						</File>
+					</Filter>
+					<Filter
+						Name="HELI"
+						Filter="">
+						<File
+							RelativePath=".\Engine Files\HELI.cpp">
+						</File>
+						<File
+							RelativePath=".\Engine Files\HELI.h">
+						</File>
+					</Filter>
+					<Filter
+						Name="ROCKET"
+						Filter="">
+						<File
+							RelativePath=".\Engine Files\ROCKET.cpp">
+						</File>
+						<File
+							RelativePath=".\Engine Files\ROCKET.h">
+						</File>
+					</Filter>
+				</Filter>
+				<Filter
+					Name="Constructive Hierarchy"
+					Filter="">
+					<Filter
+						Name="GE"
+						Filter="">
+						<File
+							RelativePath=".\Engine Files\GE.cpp">
+						</File>
+						<File
+							RelativePath=".\Engine Files\GE.h">
+						</File>
+					</Filter>
+					<Filter
+						Name="EE"
+						Filter="">
+						<File
+							RelativePath=".\Engine Files\EE.cpp">
+						</File>
+						<File
+							RelativePath=".\Engine Files\EE.h">
+						</File>
+					</Filter>
+					<Filter
+						Name="VE"
+						Filter="">
+						<File
+							RelativePath=".\Engine Files\VE.cpp">
+						</File>
+						<File
+							RelativePath=".\Engine Files\VE.h">
+						</File>
+					</Filter>
+					<Filter
+						Name="CE"
+						Filter="">
+						<File
+							RelativePath=".\Engine Files\CE.cpp">
+						</File>
+						<File
+							RelativePath=".\Engine Files\CE.h">
+						</File>
+					</Filter>
+					<Filter
+						Name="DE"
+						Filter="">
+						<File
+							RelativePath=".\Engine Files\DE.cpp">
+						</File>
+						<File
+							RelativePath=".\Engine Files\DE.h">
+						</File>
+					</Filter>
+					<Filter
+						Name="SHIP"
+						Filter="">
+						<File
+							RelativePath=".\Engine Files\SHIP.cpp">
+						</File>
+						<File
+							RelativePath=".\Engine Files\SHIP.h">
+						</File>
+					</Filter>
+					<Filter
+						Name="PROJ"
+						Filter="">
+						<File
+							RelativePath=".\Engine Files\PROJ.cpp">
+						</File>
+						<File
+							RelativePath=".\Engine Files\PROJ.h">
+						</File>
+					</Filter>
+				</Filter>
+			</Filter>
+			<Filter
+				Name="Engine Volumes"
+				Filter="">
+				<File
+					RelativePath=".\Engine Files\EngineVolumes.h">
+				</File>
+				<Filter
+					Name="BV"
+					Filter="">
+					<File
+						RelativePath=".\Engine Files\BV.cpp">
+					</File>
+					<File
+						RelativePath=".\Engine Files\BV.h">
+					</File>
+				</Filter>
+				<Filter
+					Name="BS"
+					Filter="">
+					<File
+						RelativePath=".\Engine Files\BS.cpp">
+					</File>
+					<File
+						RelativePath=".\Engine Files\BS.h">
+					</File>
+				</Filter>
+			</Filter>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

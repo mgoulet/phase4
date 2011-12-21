@@ -1,0 +1,32 @@
+////////////////////////////////////////////////
+//	Martin Goulet
+//	Project: Phase3
+//	MODEL.cpp
+////////////////////////////////////////////////
+
+#include "MODEL.h"
+
+////////////////////////////////////////////////
+//CONSTRUCTORS/DESTRUCTOR
+////////////////////////////////////////////////
+
+MODEL::MODEL()
+{
+	//empty
+}
+
+MODEL::~MODEL()
+{
+	
+	//delete members
+	if (this->skins_ptr) delete[] this->skins_ptr;
+	if (this->texcoords_ptr) delete[] this->texcoords_ptr;
+	if (this->triangles_ptr) delete[] this->triangles_ptr;
+	if (this->frames_ptr) delete[] this->frames_ptr;
+	if (this->glcmds_ptr) delete[] this->glcmds_ptr;
+	
+}
+
+////////////////////////////////////////////////
+//METHODS
+////////////////////////////////////////////////
